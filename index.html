@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Epic Burger - Hamburguer Artesanal!</title>
+  </head>
+  <body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="assets/logo2.png"
+          alt="logo epic burger"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Epic Burger</h1>
+        <span class="text-white font-medium"
+          >Rua da comida 10, Criciúma -SC</span
+        >
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium">Ter a Dom - 18:30 às 23:00</span>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Nosso produtos
+    </h2>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-5xl px-2 mb-16"
+      >
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-1.png"
+            alt="hamburguer 1"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 19.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Burger"
+                data-price="19.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-2.png"
+            alt="hamburguer 2"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Deluxe Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 24.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Deluxe Burger"
+                data-price="24.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-3.png"
+            alt="hamburguer 3"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Supreme Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 22.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Supreme Burger"
+                data-price="22.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-4.png"
+            alt="hamburguer 4"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Royal Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 16.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Royal Burger"
+                data-price="16.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-5.png"
+            alt="hamburguer 5"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Gourmet Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 18.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Gourmet Burger"
+                data-price="18.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-6.png"
+            alt="hamburguer 6"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Ultimate Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 29.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Ultimate Burger"
+                data-price="29.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-7.png"
+            alt="hamburguer 7"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Signature Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 26.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Signature Burger"
+                data-price="26.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-8.png"
+            alt="hamburguer 8"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Epic Vegetarian Burger</p>
+            <p class="text-sm text-stone-500">
+              Pão tipo brioche levemente tostado, 150g de carne bovina
+              selecionada, queijo cheddar, 2 tiras de bacon, alface, tomate,
+              cebola roxa e molho especial.
+            </p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 18.90</p>
+              <button
+                class="bg-black px-5 rounded add-to-cart-btn"
+                data-name="Epic Vegetarian Burger"
+                data-price="18.90"
+              >
+                <i
+                  class="fa fa-cart-plus text-white text-lg cursor-pointer"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Bebidas
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-5xl px-2 mb-16">
+
+        <div class="flex gap-2 w-full">
+          <img src="assets/refri-1.png" alt="coca lata" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+          <div class="w-full">
+            <p class="font-bold">Coca Cola Lata</p>
+          
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button data-name="Coca Cola Lata" data-price="5.00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img src="assets/refri-2.png" alt="guarana lata" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+          <div class="w-full">
+            <p class="font-bold">Guaraná Lata</p>
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button data-name="Guaraná Lata" data-price="5.00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img src="assets/suco.png" alt="suco lata" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+          <div class="w-full">
+            <p class="font-bold">Suco Lata</p>
+
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button data-name="Suco Lata" data-price="5.00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img src="assets/agua.png" alt="agua garrafa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+          <div class="w-full">
+            <p class="font-bold">Água Garrafa</p>
+
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 3.00</p>
+              <button data-name="Água Garrafa" data-price=".00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <div/>
+
+    <!-- MODAL -->
+
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex flex-col justify-between mb-2">
+
+        </div>
+
+        <p class="font-bold"><span id="cart-total">Total: 0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input type="text" id="address" placeholder="Endereço completo" class="w-full border-2 p-1 rounded my-1">
+
+        <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+        <div class="flex items-center justify-between mt-4 w-full">
+          <button id="close-modal-btn" class="bg-red-500 hover:bg-red-700 duration-200 text-white px-4 py-1 rounded-md">Fechar</button>
+          <button id="checkout-btn" class="bg-green-500 hover:bg-green-700 duration-200 text-white px-4 py-1 rounded-md">Finalizar pedido</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <button class="bg-laranja text-white w-14 h-14 font-semibold flex items-center gap-1 rounded-full fixed lg:bottom-6 right-6 bottom-6" id="cart-btn">
+      (<span>0</span>)
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+
+    <!-- <footer class="bg-laranja w-full py-3 fixed bottom-0 z-40 flex items-center justify-center">
+      <button class="text-white font-semibold flex items-center gap-2" id="cart-btn">
+        (<span id="cart-count">2</span>)
+        Ver meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer> -->
+  </body>
+</html>
