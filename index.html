@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -17,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Epic Burger - Hamburguer Artesanal!</title>
   </head>
   <body>
@@ -319,7 +321,7 @@
 
             <div class="flex items-center justify-between gap-2 mt-3">
               <p class="font-bold text-lg">R$ 3.00</p>
-              <button data-name="Água Garrafa" data-price=".00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
+              <button data-name="Água Garrafa" data-price="3.00" class="bg-black px-5 rounded add-to-cart-btn"><i class="fa fa-cart-plus text-white text-lg cursor-pointer"></i></button>
             </div>
           </div>
         </div>
@@ -330,8 +332,8 @@
 
     <!-- MODAL -->
 
-    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
-      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+    <div id="cart-modal" class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[700px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
 
         <div id="cart-items" class="flex flex-col justify-between mb-2">
@@ -355,7 +357,7 @@
     <!-- MODAL -->
 
     <button class="bg-laranja text-white w-14 h-14 font-semibold flex items-center gap-1 rounded-full fixed lg:bottom-6 right-6 bottom-6" id="cart-btn">
-      (<span>0</span>)
+      (<span id="cart-count">0</span>)
       <i class="fa fa-cart-plus text-lg text-white"></i>
     </button>
 
@@ -366,5 +368,7 @@
         <i class="fa fa-cart-plus text-lg text-white"></i>
       </button>
     </footer> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
