@@ -135,16 +135,16 @@ cartItemsContainer.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove-item-modal")) {
     const name = event.target.getAttribute("data-name");
     Toastify({
-        text: "Removido do carrinho",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "#ef4444",
-        },
-      }).showToast();
+      text: "Removido do carrinho",
+      duration: 3000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "#ef4444",
+      },
+    }).showToast();
 
     removeItemCart(name);
   }
@@ -200,6 +200,8 @@ checkoutBtn.addEventListener("click", function () {
     return;
   }
 
+  //enviar pedido via api wpp
+
   const cartItems = cart
     .map((item) => {
       return ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`;
@@ -217,8 +219,6 @@ checkoutBtn.addEventListener("click", function () {
   cart = [];
   updateCartModal();
 });
-
-//enviar pedido via api wpp
 
 // verificar restaurante aberto
 
