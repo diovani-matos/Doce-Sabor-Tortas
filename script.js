@@ -180,7 +180,7 @@ checkoutBtn.addEventListener("click", function () {
   const isOpen = checkOpen();
   if (!isOpen) {
     Toastify({
-      text: "Desculpe, mas o restaurante está fechado!",
+      text: "Desculpe, mas estamos fechado!",
       duration: 3000,
       close: true,
       gravity: "top", // `top` or `bottom`
@@ -225,7 +225,7 @@ checkoutBtn.addEventListener("click", function () {
 function checkOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 18 && hora < 23;
+  return hora >= 8 && hora < 18;
 }
 
 const spanItem = document.getElementById("date-span");
