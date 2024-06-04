@@ -6,7 +6,7 @@ module.exports = {
       sans: ["Lato", "sans-serif"],
     },
     extend: {
-      backgroundImage: { home: "url(/assets/background.svg)" },
+      backgroundImage: { home: "url(/assets/bg.jpg)" },
       
     },
   },
