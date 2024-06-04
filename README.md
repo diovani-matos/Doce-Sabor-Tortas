@@ -1,8 +1,8 @@
-![Logo](https://i.postimg.cc/1XDDHWzQ/doce-sabor.png)
 
-# Doce Sabor Tortas
 
-Um cardápio online de uma loja de tortas!
+# Du Dev Burger
+
+Um cardápio online de uma hamburgueria!
 
 ## Funcionalidades:
 Adicionar/remover itens do carrinho;  
@@ -25,4 +25,4 @@ Envio do pedido para whatsapp da loja, através da api do whatsapp;
 </div>
 
 ## Deploy
-https://doce-sabor-tortas.vercel.app/
+https://dudevburger.vercel.app/
